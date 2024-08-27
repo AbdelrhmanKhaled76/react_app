@@ -1,6 +1,6 @@
-## this is a MERN full stack project made with bootstrap !!
+### this is a MERN full stack project made with bootstrap !!
 
-my express server takes the information the user typed in the sign up page and if u tried to sign in with the same email it will give you an error form is handeled with formik and yup libiraries ,
+my express server takes the information the user typed in the sign up page and if you tried to sign in with the same email it will give you an error form is handeled with formik and yup libiraries ,
 after you sign up your data is saved in the mongodb and when you type your email and password correctly you will recieve a message made with the libirary "react-hot-taost" with the response from the backend server ,
 if you try to access any url of the about,services,ourwork urls without loging in you will be navigated to the unuthorized page with have an error 404 message same result will happen if you tried to enter a non existant page,
 after you log in successfully the navigation bar will have four links about,services,ourwork, and log out, the page is all responsive and made with bootstrap,
