@@ -1,0 +1,51 @@
+#ourwork-main-section h1 {
+    font-weight: 700;
+}
+
+#ourwork-main-section a {
+    color: var(--secondary-color) ;
+    transition: 1s all;
+}
+
+#ourwork-main-section a:hover {
+    color: var(--primary-color);
+}
+
+
+.ourwork-second-sec-links {
+    transition: 1s all;
+    list-style-type: none;
+    color: var(--secondary-color);
+    text-transform: uppercase ;
+    cursor: pointer;
+}
+
+.ourwork-second-sec-links:hover {
+    color: black;
+}
+
+.active-link {
+    color: black;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.432);
+    transition: 1s all;
+}
+
+.card-img-overlay h3{
+    transform: translate(0, 100%);
+    transition: 0.5s 0.3s all;
+}
+
+.card:hover  .card-img-overlay{
+    opacity: 1 !important;
+}
+
+.card:hover .card-img-overlay h3{
+    transform: translate(0,0);
+}
+
+.card {
+    transition: all 1s ease-out;
+}

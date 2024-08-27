@@ -1,0 +1,17 @@
+#myNav {
+    transition: background 1s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logout {
+    transition: all 1s;
+    width: fit-content;
+}
+
+#logout:hover {
+    background-color: #0D6EFD !important;
+    color: white !important;
+}

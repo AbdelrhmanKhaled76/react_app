@@ -1,0 +1,17 @@
+#home {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.778), rgba(0, 0, 0, 0.778)), url('/public/images/agency-1.jpg');
+}
+
+#main-content h1{
+    font-size: 7.5rem;
+}
+#main-content .h3{
+    font-size: 1.5rem;
+    font-weight : 100;
+}
+
+

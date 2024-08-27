@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+body {
+    text-transform: capitalize;
+    font-family: "Lora", serif;
+}
+
+h3, h1, h2 {
+    font-weight: 700 !important;
+}
+
+:root {
+    --primary-color : #0D6EFD;
+    --secondary-color : #888888;
+    --headers-color : #303030;
+}
+
+
+
+
+@media (max-width: 1399.98px) { 
+    .main-signup {
+        text-align: center;
+    }
+    #main-content h1{
+        font-size: 7.5rem;
+    }
+    #main-content p{
+        font-size: 5rem;
+        font-weight : 100;
+    }
+}
+
+@media (max-width: 1199.98px) { 
+    
+}
+
+@media (max-width: 991.98px) { 
+    #main-content h1 {
+        font-size: 6rem;
+    }
+    #main-content .h3{
+        font-size: 1.3rem !important;
+    }
+    .dNone {
+        display: none;
+    }
+    .service-second-sec-content p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    #main-content h1 {
+        font-size: 3.5rem;
+    }
+    #main-content .h3{
+        font-size: 0.8rem !important;
+    }
+    #myNav .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 14px; 
+    }
+
+    #logout {
+        padding: 0.5rem 1rem; /* Adjust padding for the logout button */
+        font-size: 14px; /* Adjust font size for the logout button */
+        text-align: center;
+        margin-left: 15px; /* Center the text */
+    }
+    
+    .navbar-brand img {
+        width: 40%; /* Reduce the size of the logo */
+    }
+
+    #ourwork-second-section ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    #main-content h1 {
+        font-size: 2.4rem;
+    }
+    #main-content .h3{
+        font-size: 0.8rem !important;
+    }
+    .desc {
+        font-size: 0.8rem;
+    }
+    #service-final-sec .container .h5{
+        font-size: 0.8rem !important;
+    }
+    .btn-p {
+        padding-inline: 0.5rem !important;
+        padding-block: 0.25rem !important;
+    }
+}
+
+
+

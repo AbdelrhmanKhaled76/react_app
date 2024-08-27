@@ -1,0 +1,26 @@
+.half-form {
+    width : calc( ( 100% / 2 ) - 10px ) !important;
+}
+
+.desc {
+    line-height: 40px;
+}
+
+.error-div {
+    height: fit-content !important;
+}
+
+.main-form-page {
+    min-height: 110vh;
+}
+
+.alert {
+    transition: all 0.3s ease-in-out;
+}
+
+.alert {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

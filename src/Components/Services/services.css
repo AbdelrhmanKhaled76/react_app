@@ -1,0 +1,41 @@
+#service-main-section h1 {
+    font-weight: 700;
+}
+
+#service-main-section a {
+    color: var(--secondary-color);
+    transition: 1s all;
+}
+
+#service-main-section a:hover {
+    color: var(--primary-color);
+}
+
+
+.service-second-sec-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-second-sec-content i {
+    font-size: 40px;
+    padding-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+#service-final-sec {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+#service-final-sec button {
+    transition: 1s all;
+}
+
+#service-final-sec button:hover {
+    background-color: white;
+    color: black !important;
+}

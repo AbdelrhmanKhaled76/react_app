@@ -1,0 +1,39 @@
+p {
+    color: #686868;
+    line-height: 1.9;
+}
+
+h3, h1 {
+    font-weight: 700 !important;
+}
+
+.about-first-section {
+    background-color: #FFFFFF;
+}
+
+.about-second-section {
+    background-color: #1B1B1B;
+}
+
+.video-text {
+    color: var(--secondary-color) !important;
+}
+
+.about-final-section {
+    background-color: #0461D5;
+    color: white;
+}
+
+.about-final-section i {
+    font-size: 40px;
+    color: #CDDFF3;
+}
+
+
+.about-final-section p {
+    color: #CDDFF3;
+}
+
+.about-final-section .about-count {
+    font-size: 60px;
+}
