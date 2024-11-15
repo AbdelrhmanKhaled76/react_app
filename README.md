@@ -6,8 +6,8 @@ if you try to access any url of the about,services,ourwork urls without loging i
 after you log in successfully the navigation bar will have four links about,services,ourwork, and log out, the page is all responsive and made with bootstrap,
 the ourwork page has a products that i get from the mongodb database which is images that have some information i stored manually, and the page have a loading screen that is handeled using react-query
 
-
-
+--- update ---
+i added validation to the backend and i added hashing to the password of the user
 
 
 # Getting Started with Create React App
