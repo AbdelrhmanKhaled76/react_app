@@ -16,7 +16,7 @@ const About = () => {
                 <div id="about-who-we-are" className='py-5 row g-2'>
                     <div className="col-lg-6 d-lg-block dNone" data-aos="fade-right" data-aos-delay="500">
                         <figure className="about-img-text p-5" >
-                            <img src="/images/download.jpg" alt="" className='w-100'/>
+                            <img src='/images/download.jpg' alt="" className='w-100'/>
                         </figure>
                     </div>
                     <div className="col-lg-6 col-sm-12" data-aos="fade-left" data-aos-delay="1000">

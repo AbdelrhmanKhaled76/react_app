@@ -13,6 +13,8 @@ const restApi = async()=> {
 
     const userCollection = client.db('users').collection('user');
 
+    const bcrypt = require('bcrypt');
+    const saltRounds = 10;
     const app = express();
 
     app.use(express.json());
@@ -25,21 +27,40 @@ const restApi = async()=> {
 
     let filtering =  await userCollection.findOne({email : email});
 
-    console.log(filtering);
+    if(!name || !password || !repassword || !email){
+        return res.status(400).send("fill the required form inputs please !");
+    }
+    
+    if( name.length < 3 ){
+        return  res.status(400).send("the name must be more than 3 character");
+    }
+
+    if( password !== repassword){
+        return res.status(400).send("passwords must match");
+    }
+    if(password.length < 5 || repassword.length < 5){
+        return res.status(400).send("passwords cannot be less than 5 characters");
+    }
+
+    if( !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email) ){
+        return res.status(400).send("invalid email !");
+    }
+
+    const salt = await bcrypt.genSalt(saltRounds);
+    const hashedPass = await bcrypt.hash(password, salt);
 
     if(filtering === null) {
         await userCollection.insertOne({
             name,
-            password,
-            repassword,
+            password : hashedPass,
             email,
             desc,
         });
-        res.status(200).json({message:'Success!'})
+        return res.status(200).json({message:'Success!'})
     }
 
     else {
-        res.status(400).send("This Email is Already Taken Before !");
+        return res.status(400).send("This Email is Already Taken Before !");
     }
     
     });
@@ -54,7 +75,9 @@ const restApi = async()=> {
                 return res.status(400).send("Email Not found !!");
             }
     
-            if (findEmail.password !== password) {
+            const validatePassword = await bcrypt.compare(password, findEmail.password);
+
+            if (!validatePassword) {
                 return res.status(400).send("Password is incorrect, try again !!");
             }
     
@@ -81,7 +104,7 @@ const restApi = async()=> {
             images = await imgCollection.find({"img.category" : category }).toArray();
         }
 
-        res.status(200).json(images);
+        return res.status(200).json(images);
     });
 
     app.listen(process.env.PORT || 5000,()=>{
